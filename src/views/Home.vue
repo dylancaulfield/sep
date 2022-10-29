@@ -1,16 +1,13 @@
 <template>
   <div>
 
-      <v-parallax
-          dark
-          src="/img/parallax-home-banner.jpeg"
-          height="1000"
-
+      <div
+          class="background-image"
       >
 
-          <v-container class="mt-10">
+          <v-container class="pt-10">
 
-              <div class="parallax-overlay underline">
+              <div class="background-overlay underline white--text">
 
                   <h1>SEP Civil</h1>
 
@@ -20,7 +17,7 @@
 
               </div>
 
-              <div class="parallax-overlay">
+              <div class="background-overlay">
                   <router-link to="machinery">
                       <v-btn large color="primary">View Machinery</v-btn>
                   </router-link>
@@ -31,10 +28,23 @@
               </div>
 
 
-
           </v-container>
 
-      </v-parallax>
+      </div>
+
+      <v-container class="big-padding text-center">
+
+          <h1>What we do</h1>
+
+          <p>We provide high quality <strong>Plant</strong>, <strong>Machinery</strong> and <strong>Solutions</strong> for your business. With over <strong>25</strong> years of experience.</p>
+
+          <p>
+              <router-link to="/machinery">
+                  View available machinery here
+              </router-link>
+          </p>
+
+      </v-container>
 
 
 
@@ -57,17 +67,30 @@ export default {
     border-bottom: solid 5px white;
 }
 
-.parallax-overlay {
+.big-padding {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.background-overlay {
     padding: 20px 0;
     display: block;
 }
 
-.parallax-overlay h1 {
+.background-overlay h1 {
     font-size: 84px;
 }
 
-.parallax-overlay h2 {
+.background-overlay h2 {
     font-size: 48px;
+}
+
+.background-image {
+    padding-top: 150px;
+    width: 100%;
+    height: 1000px;
+    background-image: url("/img/parallax-home-banner.jpeg");
+    background-size: cover;
 }
 
 </style>
