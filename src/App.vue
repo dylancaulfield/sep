@@ -32,7 +32,7 @@
 
         </v-app-bar>
 
-        <v-main>
+        <v-main class="mb-0 pt-0 grey lighten-2">
             <router-view>
 
             </router-view>
