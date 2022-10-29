@@ -39,6 +39,15 @@ const routes = [
 const router = new VueRouter({
     mode: "history",
     routes,
+    // eslint-disable-next-line no-unused-vars
+    scrollBehavior(to, from, savedPosition){
+
+        window.scrollTo(0, 0);
+
+        return {
+            top: 0
+        }
+    }
 });
 
 export default router;
