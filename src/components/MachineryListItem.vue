@@ -12,14 +12,12 @@
             </v-img>
 
             <v-card-actions>
-                <v-spacer></v-spacer>
 
                 <router-link :to="`/machinery/${machine.id}`">
                     <v-btn color="primary">
                         View
                     </v-btn>
                 </router-link>
-
 
             </v-card-actions>
         </v-card>
@@ -40,5 +38,7 @@ export default {
 </script>
 
 <style scoped>
+
+
 
 </style>
