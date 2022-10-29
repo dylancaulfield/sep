@@ -3,8 +3,6 @@
 
         <v-container>
 
-            <v-btn>Return to machinery</v-btn>
-
             <v-sheet class="article no-padding" color="white" elevation="3">
 
                 <v-carousel>
@@ -57,7 +55,7 @@ export default {
 .article {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 75px;
     max-width: 800px;
     padding: 30px;
 }
