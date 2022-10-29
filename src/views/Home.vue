@@ -13,8 +13,6 @@
 
                   <h2>Solutions Not Problems</h2>
 
-
-
               </div>
 
               <div class="background-overlay">
@@ -34,9 +32,9 @@
 
       <v-container class="big-padding text-center">
 
-          <h1>What we do</h1>
+          <h1 class="mb-4">What we do</h1>
 
-          <p>We provide high quality <strong>Plant</strong>, <strong>Machinery</strong> and <strong>Solutions</strong> for your business. With over <strong>25</strong> years of experience.</p>
+          <p class="mb-8">We provide high quality <strong>Plant</strong>, <strong>Machinery</strong> and <strong>Solutions</strong> for your business. With over <strong>25</strong> years of experience.</p>
 
           <p>
               <router-link to="/machinery">

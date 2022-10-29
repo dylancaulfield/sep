@@ -1,46 +1,45 @@
 <template>
-  <div>
+    <div>
 
-      <v-container>
+        <v-container>
 
-          <v-sheet class="article" color="white" elevation="3">
-
-
-
-              <h1>How to get in touch</h1>
+            <v-sheet class="article" color="white" elevation="3">
 
 
+                <h1>How to get in touch</h1>
 
-              <h2>By Phone</h2>
+                <v-divider class="my-8"></v-divider>
 
-              <a @click="openPhone">{{ fullPhone }}</a>
+                <h2>By Phone</h2>
 
-              <h2>By Email</h2>
+                <a @click="openPhone">{{ fullPhone }}</a>
 
-              <a @click="openEmail">{{ fullEmail }}</a>
+                <h2>By Email</h2>
 
-              <h3>South East Plant And Civil</h3>
+                <a @click="openEmail">{{ fullEmail }}</a>
 
-              <p>
-                  59 Balivanichanic Loop<br>
-                  Seville Grove, WA, 6112
-              </p>
+                <h3>South East Plant And Civil</h3>
 
-              <p class="font-italic">ABN 592 320 120 99</p>
+                <p>
+                    59 Balivanichanic Loop<br>
+                    Seville Grove, WA, 6112
+                </p>
 
-          </v-sheet>
+                <p class="font-italic">ABN 592 320 120 99</p>
+
+            </v-sheet>
 
 
-      </v-container>
+        </v-container>
 
-  </div>
+    </div>
 </template>
 
 <script>
 
 export default {
     name: "ContactUs",
-    data(){
+    data() {
         return {
             phone: [
                 "+",
@@ -86,31 +85,31 @@ export default {
         }
     },
     methods: {
-        openEmail(){
+        openEmail() {
 
             window.location.href = `mailto:${this.fullEmail}`
 
         },
-        openPhone(){
+        openPhone() {
 
             window.location.href = `tel:${this.fullPhone}`
 
         }
     },
     computed: {
-        fullPhone(){
+        fullPhone() {
 
             let s = "";
-            for (let c of this.phone){
+            for (let c of this.phone) {
                 s += c;
             }
             return s;
 
         },
-        fullEmail(){
+        fullEmail() {
 
             let s = "";
-            for (let c of this.email){
+            for (let c of this.email) {
                 s += c;
             }
             return s;

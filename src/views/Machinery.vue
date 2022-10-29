@@ -1,18 +1,30 @@
 <template>
-    <div>
+    <div class="margin">
 
-        <div v-bind:key="machine.id" v-for="machine in machinery">
+        <v-container>
 
-            <MachineryListItem :machine="machine" />
+            <v-row>
 
-        </div>
+                <v-col
+                    v-for="machine in machinery"
+                    :key="machine.id"
+                    class="col-md-6"
+                >
 
+                    <MachineryListItem :machine="machine" />
+
+                </v-col>
+
+            </v-row>
+
+        </v-container>
 
     </div>
 </template>
 
 <script>
 import MachineryListItem from "@/components/MachineryListItem";
+import store from "@/store";
 
 export default {
     name: "Machinery",
@@ -20,13 +32,11 @@ export default {
         MachineryListItem
     },
     data(){
-        return {
-            machinery: [
-                {
-                    id: "37fdae0b-d6dc-4de8-9d31-fd7be299d891",
-                    name: "John Deere",
-                }
-            ]
+        return {}
+    },
+    computed: {
+        machinery(){
+            return store.state.machinery;
         }
     }
 }
@@ -34,4 +44,8 @@ export default {
 
 <style scoped>
 
+.margin {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 </style>

@@ -40,34 +40,9 @@
 
         <v-footer color="grey lighten-4" padless class="black--text">
 
-            <v-row
-                justify="center"
-                no-gutters
-            >
-                <v-btn
-                    v-for="icon in icons"
-                    :key="icon"
-                    color="black"
-                    text
-                    rounded
-                    class="my-2"
-                    icon
-                >
-                    <v-icon>{{ icon }}</v-icon>
-                </v-btn>
-                <v-col
-                    class="py-4 text-center"
-                    cols="12"
-                >
-                    <strong>"Solutions not Problems"</strong>
-                </v-col>
-                <v-col
-                    class="py-4 white text-center"
-                    cols="12"
-                >
-                    {{ new Date().getFullYear() }} — <strong>© SEP Civil</strong>
-                </v-col>
-            </v-row>
+            <Footer></Footer>
+
+
 
 
         </v-footer>
@@ -75,16 +50,16 @@
 </template>
 
 <script>
+import Footer from "@/components/Footer";
 
 export default {
     name: 'App',
-
+    components: {
+        Footer
+    },
     data: () => ({
         links: ["Help", "Contact Us"],
-        icons: [
-            'mdi-phone',
-            'mdi-email',
-        ],
+
 
     }),
 };

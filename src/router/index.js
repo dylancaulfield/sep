@@ -27,7 +27,7 @@ const routes = [
         component: () => import(/* webpackChunkName: "machinery" */ '../views/Machinery.vue')
     },
     {
-        path: '/machinery/{id}',
+        path: '/machinery/:id',
         name: 'Machine',
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
