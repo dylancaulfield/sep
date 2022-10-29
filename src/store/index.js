@@ -20,8 +20,8 @@ export default new Vuex.Store({
             },
             {
                 id: "7848547c-b32f-4324-bf2b-b5a91303504c",
-                name: "Manitou 2150 RT track loader",
-                description: "The Manitou 2150 RT track loader is equipped with IdealTrax, making it ideal for working on land, mud, sand, or gravel. Its particularly compact structure makes traveling on construction sites easy, while its ergonomic driving position offers the perfect comfort for everday use. To ensure versatility, the 2150 RT track loader is compatible with many attachments. Change functions within minutes and find a solution for all your projects. Combining strength, all-terrain capability, reliability and versatility, the 2150 RT model meets all your requirements.",
+                name: "Manitou 2150 RT Track Loader",
+                description: "The Manitou 2150 RT track loader is equipped with IdealTrax, making it ideal for working on land, mud, sand, or gravel. Its particularly compact structure makes traveling on construction sites easy, while its ergonomic driving position offers the perfect comfort for everyday use. To ensure versatility, the 2150 RT track loader is compatible with many attachments. Change functions within minutes and find a solution for all your projects. Combining strength, all-terrain capability, reliability and versatility, the 2150 RT model meets all your requirements.",
                 numImages: 2
             },
             {
