@@ -51,7 +51,7 @@
         >
 
             <router-link to="/">
-                <v-img class="ml-0" max-height="100" max-width="120" src="/img/logo.jpeg"></v-img>
+                <v-img class="ml-0" max-height="100" max-width="120" src="@/assets/img/logo-dark.jpeg"></v-img>
             </router-link>
 
             <v-toolbar-title class="black--text">
