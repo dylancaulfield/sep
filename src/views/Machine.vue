@@ -19,13 +19,16 @@
 
                 <h1>{{ machine.name }}</h1>
 
+                <v-divider class="my-8"></v-divider>
+
                 <p>{{ machine.description }}</p>
 
                 <v-divider class="my-8"></v-divider>
 
                 <p>
                     <router-link to="/contact-us">
-                        Get in touch with Niall for more information
+                        Contact Niall for more information
+                        <v-icon color="red">mdi-arrow-right</v-icon>
                     </router-link>
                 </p>
 

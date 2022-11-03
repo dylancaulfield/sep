@@ -1,26 +1,26 @@
 <template>
     <div>
 
-        <v-card max-width="1000px">
+        <router-link :to="`/machinery/${machine.id}`">
+
+        <v-card max-width="1000px" shaped>
             <v-img
                 :src="`/machines/${machine.id}/1.jpeg`"
                 class="white--text align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="500px"
             >
-                <v-card-title v-text="machine.name"></v-card-title>
+                <v-card-title>
+                    {{machine.name}}
+                    <v-icon class="white--text">mdi-arrow-right</v-icon>
+                </v-card-title>
             </v-img>
 
-            <v-card-actions>
 
-                <router-link :to="`/machinery/${machine.id}`">
-                    <v-btn color="primary">
-                        View
-                    </v-btn>
-                </router-link>
 
-            </v-card-actions>
         </v-card>
+
+        </router-link>
 
     </div>
 </template>

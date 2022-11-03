@@ -2,11 +2,12 @@
         <v-row
             justify="center"
             no-gutters
+            class="black white--text"
         >
             <v-btn
                 v-for="(icon, i) in icons"
                 :key="i"
-                color="black"
+                color="primary"
                 text
                 rounded
                 class="my-2"
@@ -19,10 +20,10 @@
                 class="py-4 text-center"
                 cols="12"
             >
-                <strong>"Solutions not Problems"</strong>
+                <strong>Solutions not Problems</strong>
             </v-col>
             <v-col
-                class="py-4 white text-center"
+                class="py-4 grey darken-4 text-center"
                 cols="12"
             >
                 {{ new Date().getFullYear() }} — <strong>© SEP Civil</strong>

@@ -14,7 +14,7 @@ export default new Vuex.Store({
             },
             {
                 id: "141b98bc-c203-4383-bb21-181709c67b8d",
-                name: "ZX225USLC-5",
+                name: "Hitachi ZX225USLC-5",
                 description: "You can be confident with the performance, power and productivity of the ZX225US-5 and the ZX225USLC-5 in getting the job done.",
                 numImages: 5
             },
