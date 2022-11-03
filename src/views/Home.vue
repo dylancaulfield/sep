@@ -5,13 +5,13 @@
           class="background-image"
       >
 
-          <v-container class="pt-10">
+          <v-container>
 
               <div class="background-overlay underline white--text">
 
-                  <h1>SEP Civil</h1>
+                  <v-img max-width="800px" src="@/assets/img/logo-dark.jpeg" class="transparent mb-8"></v-img>
 
-                  <h2>25+ years in Plant, Machinery and Solutions</h2>
+                  <h1>Plant Machinery Hire and Solutions for your Business</h1>
 
               </div>
 
@@ -34,7 +34,7 @@
 
           <h1 class="mb-4">What we do</h1>
 
-          <p class="mb-8">We provide high quality <strong>Plant</strong>, <strong>Machinery</strong> and <strong>Solutions</strong> for your business. With <strong>25+</strong> years of experience.</p>
+          <p class="mb-8">Providing high quality Plant Machinery and Solutions for your Business. Over <strong>25</strong> years experience in Australia and Internationally.</p>
 
           <p>
               <router-link to="/machinery">
@@ -62,6 +62,10 @@ export default {
 
 <style>
 
+.transparent {
+    opacity: 0.85;
+}
+
 .underline {
     border-bottom: solid 5px white;
 }
@@ -72,29 +76,21 @@ export default {
 }
 
 .background-overlay h1 {
-    font-size: 84px;
-}
-
-.background-overlay h2 {
     font-size: 24px;
+    background-color: rgba(63, 56, 56, 0.3);
+    padding: 10px;
+    max-width: 800px;
 }
 
-.background-image {
-    padding-top: 150px;
-    width: 100%;
-    height: 1000px;
-    background-image: url("/img/parallax-home-banner.jpeg");
-    background-size: cover;
-}
 
 @media only screen and (max-width: 600px) {
 
     .background-image {
-        padding-top: 25px;
+        padding-top: 40px;
         width: 100%;
         height: 600px;
-        background-image: url("/img/parallax-home-banner.jpeg");
-        background-size: cover;
+        background-image: url("../../src/assets/img/home-banner.jpeg");
+        background-size: auto;
     }
 
     .big-padding {
@@ -107,10 +103,10 @@ export default {
 @media only screen and (min-width: 600px) {
 
     .background-image {
-        padding-top: 150px;
+        padding-top: 75px;
         width: 100%;
         height: 1000px;
-        background-image: url("/img/parallax-home-banner.jpeg");
+        background-image: url("../../src/assets/img/home-banner.jpeg");
         background-size: cover;
     }
 

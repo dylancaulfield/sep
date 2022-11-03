@@ -9,7 +9,7 @@
                     <v-carousel-item
                         v-for="i in machine.numImages"
                         :key="i"
-                        :src="`/machines/${machine.id}/${i}.jpeg`"
+                        :src="require(`@/assets/machines/${machine.id}/${i}.jpeg`)"
                     ></v-carousel-item>
                 </v-carousel>
 

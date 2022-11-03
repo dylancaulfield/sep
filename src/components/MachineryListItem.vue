@@ -3,9 +3,9 @@
 
         <router-link :to="`/machinery/${machine.id}`">
 
-        <v-card max-width="1000px" shaped>
+        <v-card max-width="1000px" shaped v-show="ready">
             <v-img
-                :src="`/machines/${machine.id}/1.jpeg`"
+                :src="require(`@/assets/machines/${machine.id}/1.jpeg`)"
                 class="white--text align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="500px"
@@ -33,6 +33,14 @@ export default {
             id: String,
             name: String
         }
+    },
+    data(){
+        return {
+            ready: false
+        }
+    },
+    mounted() {
+        this.ready = true;
     }
 }
 </script>
