@@ -66,11 +66,6 @@ export default {
     border-bottom: solid 5px white;
 }
 
-.big-padding {
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-
 .background-overlay {
     padding: 20px 0;
     display: block;
@@ -90,6 +85,40 @@ export default {
     height: 1000px;
     background-image: url("/img/parallax-home-banner.jpeg");
     background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .background-image {
+        padding-top: 25px;
+        width: 100%;
+        height: 600px;
+        background-image: url("/img/parallax-home-banner.jpeg");
+        background-size: cover;
+    }
+
+    .big-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    .background-image {
+        padding-top: 150px;
+        width: 100%;
+        height: 1000px;
+        background-image: url("/img/parallax-home-banner.jpeg");
+        background-size: cover;
+    }
+
+    .big-padding {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
 }
 
 </style>
