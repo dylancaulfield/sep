@@ -11,7 +11,7 @@
 
                   <h1>SEP Civil</h1>
 
-                  <h2>Solutions Not Problems</h2>
+                  <h2>25+ years in Plant, Machinery and Solutions</h2>
 
               </div>
 
@@ -20,7 +20,7 @@
                       <v-btn large color="primary">View Machinery</v-btn>
                   </router-link>
                   <router-link to="contact-us">
-                      <v-btn large color="white" class="blue--text ml-4">Contact Us</v-btn>
+                      <v-btn large color="white" class="red--text ml-4">Contact Us</v-btn>
                   </router-link>
 
               </div>
@@ -34,11 +34,12 @@
 
           <h1 class="mb-4">What we do</h1>
 
-          <p class="mb-8">We provide high quality <strong>Plant</strong>, <strong>Machinery</strong> and <strong>Solutions</strong> for your business. With over <strong>25</strong> years of experience.</p>
+          <p class="mb-8">We provide high quality <strong>Plant</strong>, <strong>Machinery</strong> and <strong>Solutions</strong> for your business. With <strong>25+</strong> years of experience.</p>
 
           <p>
               <router-link to="/machinery">
                   View available machinery here
+                  <v-icon color="red">mdi-arrow-right</v-icon>
               </router-link>
           </p>
 
@@ -80,7 +81,7 @@ export default {
 }
 
 .background-overlay h2 {
-    font-size: 48px;
+    font-size: 24px;
 }
 
 .background-image {

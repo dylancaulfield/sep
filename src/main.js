@@ -6,19 +6,7 @@ import vuetify from './plugins/vuetify'
 
 Vue.config.productionTip = false
 
-const theme = {
-  themes: {
-    light: {
-      primary: '#3f51b5',
-      secondary: '#ffdc12',
-      accent: '#ff0326',
-      error: '#b71c1c',
-    }
-  }
-}
-
 new Vue({
-  theme,
   router,
   store,
   vuetify,

@@ -5,8 +5,7 @@
 
             <v-sheet class="article" color="white" elevation="3">
 
-
-                <h1>How to get in touch</h1>
+                <h1>Contact Us</h1>
 
                 <v-divider class="my-8"></v-divider>
 
@@ -17,15 +16,6 @@
                 <h2>By Email</h2>
 
                 <a @click="openEmail">{{ fullEmail }}</a>
-
-                <h3>South East Plant And Civil</h3>
-
-                <p>
-                    59 Balivanichanic Loop<br>
-                    Seville Grove, WA, 6112
-                </p>
-
-                <p class="font-italic">ABN 592 320 120 99</p>
 
             </v-sheet>
 
