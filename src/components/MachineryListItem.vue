@@ -3,7 +3,7 @@
 
         <router-link :to="`/machinery/${machine.id}`">
 
-        <v-card max-width="1000px" shaped v-show="ready">
+        <v-card max-width="1000px" color="black" shaped v-show="ready">
             <v-img
                 :src="require(`@/assets/machines/${machine.id}/1.jpeg`)"
                 class="white--text align-end"
@@ -12,10 +12,12 @@
             >
                 <v-card-title>
                     {{machine.name}}
-                    <v-icon class="white--text">mdi-arrow-right</v-icon>
                 </v-card-title>
             </v-img>
 
+            <v-card-actions>
+                <v-btn text color="red">View</v-btn>
+            </v-card-actions>
 
 
         </v-card>
