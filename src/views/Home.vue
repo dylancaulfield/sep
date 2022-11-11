@@ -9,7 +9,7 @@
 
               <div class="background-overlay underline white--text">
 
-                  <v-img max-width="800px" src="@/assets/img/logo-dark.jpeg" class="transparent mb-8"></v-img>
+                  <v-img max-width="800px" src="@/assets/img/logo-transparent.png" class="transparent mb-8"></v-img>
 
                   <h1>Plant Machinery Hire and Solutions for your Business</h1>
 
@@ -82,6 +82,10 @@ export default {
     max-width: 800px;
 }
 
+.big-padding {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -90,12 +94,7 @@ export default {
         width: 100%;
         height: 600px;
         background-image: url("../../src/assets/img/home-banner.jpeg");
-        background-size: auto;
-    }
-
-    .big-padding {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        background-size: cover;
     }
 
 }
@@ -108,11 +107,6 @@ export default {
         height: 1000px;
         background-image: url("../../src/assets/img/home-banner.jpeg");
         background-size: cover;
-    }
-
-    .big-padding {
-        padding-top: 150px;
-        padding-bottom: 150px;
     }
 
 }
