@@ -30,6 +30,12 @@ export default new Vuex.Store({
                 description: "The heavyweight reversible vibratory plates offer an uncompromisingly strong compaction performance with compact dimensions and a high level of operating comfort.",
                 numImages: 2
             },
+            {
+                id: "95de0c81-4cce-42b3-828f-e89c3f7c31b6",
+                name: "Doosan DX190W-7",
+                description: "The Doosan DX190W-7 is a powerful and efficient wheeled excavator designed for construction and excavation tasks. It offers excellent digging and lifting capabilities, advanced fuel-saving technologies, and a durable construction. The spacious and comfortable cab prioritizes operator comfort and safety, while the machine's adaptability to various attachments enhances its versatility. It is a reliable and valuable asset for contractors, delivering strong performance and efficiency in a range of construction projects.",
+                numImages: 3
+            }
         ]
     },
     mutations: {},
